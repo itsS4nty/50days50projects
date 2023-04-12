@@ -1,0 +1,46 @@
+.image-container {
+    width: 80px;
+    height: 800px;
+    position: relative;
+    cursor: pointer;
+    transition: width 1s ease-in-out;
+}
+
+.image {
+    border-radius: 24px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.image-active {
+    width: 720px;
+    cursor: default;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    opacity: 0;
+}
+
+.image-text-active {
+    opacity: 1;
+    transition: opacity .3s ease-in-out .5s;
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        width: 100%;
+        height: 84px;
+        transition: height 1s ease-in-out;
+    }
+    
+    .image-active {
+        width: 100%;
+        height: 340px;
+    }
+}
